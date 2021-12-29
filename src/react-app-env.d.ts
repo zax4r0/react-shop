@@ -1,31 +1,31 @@
 /// <reference types="react-scripts" />
 
 type CartItem = {
-    id: string;
-    name: string;
-    price: number;
-    category: string;
-    image: string;
-    quantity: number;
-    includedInSum: boolean;
+  id: string;
+  name: string;
+  price: number;
+  category: string;
+  image: string;
+  quantity: number;
+  includedInSum: boolean;
 };
 
 type Product = {
-    id: number;
-    category: string;
-    description: string;
-    image: string;
-    price: number;
-    title: string;
-    amount: number;
+  id: number;
+  category: string;
+  description: string;
+  image: string;
+  price: number;
+  title: string;
+  amount: number;
 };
 
 type ProductList = {
-    products: Product[];
+  products: Product[];
 };
 type Category = {
-    name: string;
+  name: string;
 };
 type CategoryList = {
-    category: Category[];
+  category: Category[];
 };

@@ -1,6 +1,6 @@
-import { ReactNode } from "react";
-import Footer from "../../components/Footer";
-import NavBar from "../../components/NavBar";
+import { ReactNode } from 'react';
+import Footer from '../../components/Footer';
+import NavBar from '../../components/NavBar';
 
 function IndexLayout({ children }: { children: ReactNode }) {
   return (

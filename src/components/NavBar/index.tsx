@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { RootState } from "../../app/lib/redux/store";
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { RootState } from '../../app/lib/redux/store';
 function NavBar() {
   const [searchInput, setSearchInput] = useState(true);
   const [mdOptionsToggle, setMdOptionsToggle] = useState(true);
@@ -15,7 +15,7 @@ function NavBar() {
           <div
             id="md-searchbar"
             className={`${
-              mdOptionsToggle ? "hidden" : "flex"
+              mdOptionsToggle ? 'hidden' : 'flex'
             } bg-white dark:bg-gray-900 lg:hidden py-5 px-6 items-center justify-between`}
           >
             <div className="flex items-center space-x-3 text-gray-800 dark:text-white">
@@ -126,17 +126,8 @@ function NavBar() {
 
           <div className="dark:bg-gray-900 bg-gray-50 px-6 py-9">
             <div className="container mx-auto flex items-center justify-between">
-              <h1
-                className="md:w-2/12 cursor-pointer text-gray-800 dark:text-white"
-                aria-label="the Crib."
-              >
-                <svg
-                  width="175"
-                  height="64"
-                  viewBox="0 0 283 64"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+              <h1 className="md:w-2/12 cursor-pointer text-gray-800 dark:text-white" aria-label="the Crib.">
+                <svg width="175" height="64" viewBox="0 0 283 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M141.04 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM248.72 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM200.24 34c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9V5h9zM36.95 0L73.9 64H0L36.95 0zm92.38 5l-27.71 48L73.91 5H84.3l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10V51h-9V17h9v9.2c0-5.08 5.91-9.2 13.2-9.2z"
                     fill="#000"
@@ -201,7 +192,7 @@ function NavBar() {
                     type="text"
                     placeholder="search"
                     className={` ${
-                      searchInput ? "hidden" : ""
+                      searchInput ? 'hidden' : ''
                     } text-sm dark:bg-gray-900 dark:placeholder-gray-300 text-gray-600 rounded ml-1 border border-transparent focus:outline-none focus:border-gray-400 px-1`}
                   />
                 </div>
@@ -350,7 +341,7 @@ function NavBar() {
           <div
             id="mobile-menu"
             className={`${
-              showMenu ? "flex" : "hidden"
+              showMenu ? 'flex' : 'hidden'
             } absolute dark:bg-gray-900 z-10 inset-0 md:hidden bg-white flex-col h-screen w-full`}
           >
             <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-700 pb-4 p-4">
@@ -399,18 +390,8 @@ function NavBar() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path
-                    d="M12 4L4 12"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M4 4L12 12"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
+                  <path d="M12 4L4 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M4 4L12 12" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
             </div>
