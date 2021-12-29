@@ -8,7 +8,7 @@ function App() {
     <>
       <IndexLayout>
         <Routes>
-          <Route path="/react-shop" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="cart" element={<CartPage2 />} />
         </Routes>
       </IndexLayout>
